@@ -1,0 +1,121 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    
+}
+
+.headerMainBlock {
+    display: flex;
+    align-items: center;
+}
+
+.headerMainBlock h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--textColor);
+    transition: color 0.4s;
+}
+
+.navToSite {
+    display: flex;
+    align-items: center;
+}
+
+.navToSite a {
+    padding: 0.5rem;
+    margin-left: 2rem;
+    color: var(--textColor);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.navToSite a::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background-color: var(--textColor);
+    transition: width 0.4s;
+}
+
+.navToSite a:hover::before {
+    width: 100%;
+}
+
+.navToSite a:nth-child(1) {
+    margin-left: 0;
+}
+
+.contactsNavBar {
+    display: flex;
+}
+
+.contactsNavBar a {
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.4s ease;
+}
+
+.contactsNavBar a:hover {
+    transform: scale(1.05);
+}
+
+.contactsNavBar a:nth-child(1) {
+    margin-left: 0;
+}
+
+.handleThemeBtn {
+    margin-left: 1rem;
+}
+
+.handleThemeBtn img {
+    width: 3rem;
+    height: 3rem;
+    animation: spawnIconAnimation 1s ease;
+}
+
+@keyframes spawnIconAnimation {
+    0% {
+        width: 0;
+        height: 0;
+    }
+
+    90% {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    100% {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .headerMainBlock h2 {
+        font-size: 1.75rem;
+    }
+    .handleThemeBtn img {
+        width: 2rem;
+        height: 2rem;
+    }
+    .navToSite a {
+        font-size: 0.75rem;
+    }
+}
+
+
+@media (max-width: 765px) {
+    .navToSite {
+        display: none;
+    }
+}

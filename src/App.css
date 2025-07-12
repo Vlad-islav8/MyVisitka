@@ -1,0 +1,7 @@
+.app {
+    background-color: var(--bgColor);
+    color: whitesmoke;
+    min-height: 100vh;
+    position: relative;
+    transition: all 0.4s;
+}
