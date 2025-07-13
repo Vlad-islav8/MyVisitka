@@ -12,3 +12,6 @@ export const getActiveContacts = createSelector(getAdminData, (admin) => {
     return admin.activeContactsLink
 })
 
+export const getMousePosition = createSelector(getAdminData, (admin) => {
+    return admin.cursorPosition
+})

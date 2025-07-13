@@ -1,4 +1,48 @@
 .aboutMe {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
+}
+.infoBlock {
+    transform: translateX(-8px) translateY(-8px);
+    width: 50%;
+    background-color: var(--mainPurple);
+    padding: 1rem;
+    box-shadow: 8px 8px 0px 0px rgba(80, 33, 209, 0.5);
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+.infoBlock:nth-last-child(1) {
+    background-color: var(--mainGreen);
+    box-shadow: 8px 8px 0px 0px rgba(33, 209, 63, 0.5);
+
+}
+.infoBlock:hover {
+    box-shadow:none;
+    transform: none;
+    
+}
+
+.infoBlock h2 {
+    font-weight: 600;
+    color:  var(--text-color);
+}
+
+.infoBlock p {
+    margin: 1rem 0;
+}
+
+.additionaBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media(max-width: 768px) {
+    .aboutMe {
+        flex-direction: column;
+    }
+    .infoBlock {
+        width: 100%;
+    }
 }

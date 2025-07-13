@@ -25,7 +25,7 @@ const Header = () => {
                 </button>
             </div>
             <nav className={styles.navToSite}>
-                <a href="#aboutus">Обо мне</a>
+                <a href="#aboutMe">Обо мне</a>
                 <a href="#scils">Навыки</a>
                 <a href="#portfolio">Портфолио</a>
                 <a href="#contacts">Контакты</a>

@@ -27,9 +27,13 @@ const initialState = {
         textColor: "#f5f5f5",
         bgColor: "#202020",
         mainGreen: "#21d13f",
-        mainPurple: "#21d13f",
+        mainPurple: "#5021d1",
         btnBgc: "#454a4e",
         btnText: "e0e0f4 "
+    },
+    cursorPosition: {
+        x: 0,
+        y: 0,
     },
 }
 
@@ -54,10 +58,16 @@ const AdminReducer = createSlice({
                 localStorage.setItem("them", 'light')
             }
             colorSetter(CV)
+        },
+        setMousePosition(state, action) {
+            state.cursorPosition = action.payload
+        },
+        setDisplayCurrent(state, action) {
+            state.displayCurrent = action.payload
         }
     }
 })
 
-export const { setNewColor } = AdminReducer.actions
+export const { setNewColor, setMousePosition, setDisplayCurrent } = AdminReducer.actions
 
 export default AdminReducer.reducer

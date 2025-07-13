@@ -10,4 +10,6 @@ export const colorSetter = (colors) => {
     setNewThemeColor("bgColor", colors.bgColor)
     setNewThemeColor("btnBgc", colors.btnBgc)
     setNewThemeColor("btnText", colors.btnText) 
+    setNewThemeColor("mainGreen", colors.mainGreen) 
+    setNewThemeColor("mainPurple", colors.mainPurple) 
 }

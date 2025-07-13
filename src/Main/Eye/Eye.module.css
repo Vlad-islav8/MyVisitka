@@ -1,0 +1,35 @@
+.smile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem 0 3rem;
+}
+
+.eye {
+    border: 2px black;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: var(--textColor);
+    border-radius: 50%;
+}
+
+.eye:nth-last-child(1) {
+    margin-left: 1rem;
+}
+
+.pupil {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--bgColor);
+
+    border-radius: 50%;
+}
+
+@media(max-width: 768px) {
+    .smile {
+        display: none;
+    }
+}

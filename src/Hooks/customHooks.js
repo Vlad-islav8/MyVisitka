@@ -5,5 +5,3 @@ export const useSetMainColor = (name, value) => {
         cssVars[name]  = value
     }, [name, value]);
 }
-
- 

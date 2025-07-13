@@ -1,5 +1,6 @@
 .mainInfo {
     width: 100%;
+    height: 90vh;
     min-height: calc(100vh -80px);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,7 +11,7 @@
     filter: blur(4px);
     width: 350px;
     height: 350px;
-    background-color: #21d13f;
+    background-color: var(--mainGreen);
     position: absolute;
     top: -100px;
     left: 0;
