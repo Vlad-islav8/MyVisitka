@@ -15,3 +15,10 @@ export const getActiveContacts = createSelector(getAdminData, (admin) => {
 export const getMousePosition = createSelector(getAdminData, (admin) => {
     return admin.cursorPosition
 })
+export const getcontactsModal = createSelector(getAdminData, (admin) => {
+    return admin.contactsModal
+})
+
+export const getTechnologies = createSelector(getAdminData, (admin) => {
+    return admin.technologies
+})

@@ -1,14 +1,16 @@
 import styles from './MainInfo.module.css'
 import MeAndPhone from '../../Images/MeAndPhone.png'
 import close from '../../Images/close.svg'
-import { useState } from 'react'
-import { useSelector } from 'react-redux'
-import { getContacts } from '../../Selectors/adminSelectors'
+import { useDispatch, useSelector } from 'react-redux'
+import { getContacts, getcontactsModal } from '../../Selectors/adminSelectors'
+import { setContactsModal } from '../../Redux/AdminReducer'
 const MainInfo = () => {
     const contacts = useSelector(getContacts)
-    const [modalActive, setModalActive] = useState(false)
+    const contactsModal = useSelector(getcontactsModal)
+    const dispatch = useDispatch()
     const handleModal = () => {
-        (modalActive) ? setModalActive(false) : setModalActive(true)
+        debugger
+        (!contactsModal) ? dispatch(setContactsModal(true)) : dispatch(setContactsModal(false))
     }
     return (
         <>
@@ -24,7 +26,7 @@ const MainInfo = () => {
                     <img src={MeAndPhone} alt="" />
                 </article>
             </section>
-            <section className={`${styles.modal} ${(modalActive && styles.activeModal)}`}>
+            <section className={`${styles.modal} ${(contactsModal && styles.activeModal)}`}>
                 <div className={styles.modalContent}>
                     <div className={styles.modalHeader}>
                         <h2 className={styles.modalInfo}>Мои контакты</h2>
