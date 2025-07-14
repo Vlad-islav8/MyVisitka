@@ -1,0 +1,11 @@
+.portfolio {
+    margin: 5rem 0 0 0;
+}
+
+.portfolio h3 {
+    font-weight: 600;
+    color: var(--textColor);
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}

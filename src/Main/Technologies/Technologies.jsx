@@ -5,6 +5,9 @@ import TechItem from './TechItem/TechItem'
 const Technologies = () => {
     const technologies = useSelector(getTechnologies)
     return (
+        <>
+        <h2 className={styles.stack}>Мой технологический стек:</h2>
+        <span className={styles.line}></span>
         <section className={styles.technologies} id='skills'>
             {
                 technologies.map((el) => {
@@ -12,6 +15,7 @@ const Technologies = () => {
                 })
             }
         </section>
+        </>
         
     )
 }

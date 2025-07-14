@@ -13,6 +13,14 @@ import react from '../Images/TechIcons/react.svg'
 import redux from '../Images/TechIcons/redux.svg'
 import api from '../Images/TechIcons/api.svg'
 import typescript from '../Images/TechIcons/typescript.svg'
+import avtoMob from '../Images/PortFolio/avtoMob.png'
+import stroika from '../Images/PortFolio/stroika.png'
+import furniture from '../Images/PortFolio/furniture.png'
+import neon from '../Images/PortFolio/neon.png'
+import calculator from '../Images/PortFolio/calculator.png'
+import konstruct from '../Images/PortFolio/konstruct.png'
+import ujjo from '../Images/PortFolio/ujjo.png'
+import todo from '../Images/PortFolio/todo.png'
 const initialState = {
     contactsLink: [
         { name: "telegram", link: "https://t.me/mylitlezummer", icon: telegram },
@@ -93,6 +101,56 @@ const initialState = {
             info: "TypeScript — строго типизированный язык программирования, расширяющий JavaScript. Добавляет статическую проверку типов, интерфейсы и другие возможности. Компилируется в обычный JavaScript. Улучшает поддержку кода, помогает избегать ошибок на этапе разработки. Популярен в крупных проектах."
         },
 
+    ],
+    portfolio: [
+        {
+            name: 'avtoMob', 
+            link: 'https://vlad-islav8.github.io/avtoMob/', 
+            prev: avtoMob, 
+            title: 'Сайт по подбору авто. Выполнен на React + Redux toolkit. Сайт имеет функционал поиска, фильтрации, сортировки авто. Он отлично показывает мои способности работы с Redux'
+        },
+        {
+            name: 'stroika', 
+            link: 'https://vlad-islav8.github.io/StroikaMirSite-Myltipage-/', 
+            prev: stroika, 
+            title: 'Трех страничный лендинг сайта строительных интсрументов, выполнен на чистом React'
+        },
+        {
+            name: 'furniture', 
+            link: 'https://vlad-islav8.github.io/furnitureSite-Myltipage-/', 
+            prev: furniture, 
+            title: 'Трех страничный лендинг сайта мебельной фурнитуры, выполнен на чистом React'
+        },
+        {
+            name: 'neon', 
+            link: 'https://vlad-islav8.github.io/Neon-bricks/', 
+            prev: neon, 
+            title: 'Личный сайт браузерной игры. Разработан в стилистике самой игры. Сайт показыват мои навыки работы с Cookies'
+        },
+        {
+            name: 'calculator', 
+            link: 'https://vlad-islav8.github.io/Xiaomi-calculator-app/', 
+            prev: calculator, 
+            title: 'Точная копия калькулятора с телефонов xiaomi выполнен в 1 файле. Логика написанна на чистом js'
+        },
+        {
+            name: 'konstruct', 
+            link: 'https://vlad-islav8.github.io/-Konstruck/#', 
+            prev: konstruct, 
+            title: 'Одна из первых моих успешных работ. Лендинг выполнен на html, css'
+        },
+        {
+            name: 'ujjo', 
+            link: 'https://vlad-islav8.github.io/-ujjo/#', 
+            prev: ujjo, 
+            title: 'Красивый лендинг ресторана'
+        },
+        {
+            name: 'todo', 
+            link: 'https://vlad-islav8.github.io/TODO-LIST/', 
+            prev: todo, 
+            title: 'TODO Трекер задач. Написан на чистом React. Сохраняет задачи в локальное хранилище брузера. Имеет функционал добавления, удаления, сортировки задач. Готовую можно отметить как выполненную. Так же задачи можно редактировать '
+        },
     ]
 }
 

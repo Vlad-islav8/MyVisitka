@@ -74,9 +74,9 @@
 
 .modalItem h2 {
     color: var(--mainGreen);
+    text-shadow: 4px 4px 16px rgba(33, 209, 63, 0.5);
     font-size: 4rem;
     font-weight: 600;
-    text-shadow: 4px 4px 16px rgba(33, 209, 63, 0.5);
     text-transform: uppercase;
     margin: 2rem 0;
 }

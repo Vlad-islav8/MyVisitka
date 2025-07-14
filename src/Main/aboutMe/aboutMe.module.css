@@ -47,3 +47,10 @@
         width: 100%;
     }
 }
+
+.stack {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+

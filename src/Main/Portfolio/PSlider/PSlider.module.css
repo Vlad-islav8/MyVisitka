@@ -1,0 +1,207 @@
+.PSlider {
+    width: 100%;
+    display: flex;
+    min-height: 500px;
+    position: relative;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+}
+
+.next {
+    color: var(--textColor);
+    padding: 0.5rem 1rem 1rem 0.5rem;
+    right: 0;
+    background-color: #21d13f;
+    border-radius: 15px 0 0 0;
+    font-size: 1rem;
+    transition: all 0.4s ease
+}
+
+.next:hover {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.prev {
+    left: 0;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+    color: var(--textColor);
+    background-color: #21d13f;
+    border-radius: 0 15px 0 0;
+    transition: all 0.4s ease
+}
+
+.prev:hover {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.link {
+    padding: 1rem 2rem 0 2rem;
+    background-color: #5021d1;
+    color: var(--textColor);
+    border: none;
+    border-radius: 15px 15px 0 0;
+    width: 250px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 125px);
+    transition: all 0.4s ease;
+}
+
+.link:hover {
+    padding: 1rem 2rem 1.5rem 2rem;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.info h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--mainGreen);
+    text-shadow: 4px 4px 16px rgba(33, 209, 63, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+}
+
+.info p {
+    color: var(--textColor);
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+.imgContainer {
+    margin: 2rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.info img {
+    height: 300px;
+}
+
+@media (max-width: 1200px) {
+    .info h2 {
+        font-size: 3.5rem;
+    }
+    .info p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .PSlider, .slide {
+        min-height: 450px;
+    }
+    .info h2 {
+        font-size: 3rem;
+    }
+    .info p {
+        font-size: 1.6rem;
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .PSlider, .slide {
+        min-height: 400px;
+    }
+    .info h2 {
+        font-size: 2.5rem;
+    }
+    .info p {
+        font-size: 1.4rem;
+        width: 70%;
+    }
+    .link {
+        width: 220px;
+        left: calc(50% - 110px);
+    }
+}
+
+@media (max-width: 576px) {
+    .PSlider, .slide {
+        min-height: 350px;
+    }
+    .info h2 {
+        font-size: 2rem;
+    }
+    .info p {
+        font-size: 1.2rem;
+        width: 80%;
+        padding: 1.5rem;
+    }
+    .link {
+        width: 200px;
+        left: calc(50% - 100px);
+        font-size: 0.9rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .PSlider, .slide {
+        min-height: 300px;
+    }
+    .info h2 {
+        font-size: 1.8rem;
+    }
+    .info p {
+        font-size: 1rem;
+        width: 90%;
+        padding: 1rem;
+    }
+    .link {
+        width: 180px;
+        left: calc(50% - 90px);
+        padding: 0.8rem 1.5rem 0 1.5rem;
+    }
+    .link:hover {
+        padding: 0.8rem 1.5rem 1.2rem 1.5rem;
+    }
+    .btn {
+        padding: 0.4rem 0.8rem 0.8rem 0.4rem;
+    }
+    .btn:hover {
+        padding: 1rem 1.2rem 1.2rem 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .info h2 {
+        font-size: 1.5rem;
+    }
+    .info p {
+        font-size: 0.9rem;
+    }
+    .link {
+        width: 160px;
+        left: calc(50% - 80px);
+    }
+}

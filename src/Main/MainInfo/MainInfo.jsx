@@ -45,7 +45,7 @@ const MainInfo = () => {
                                     )
                                 }
                                 if (el.name === 'gitHub') {
-                                    return 
+                                    return
                                 }
                                 return (
                                     <a href={el.link} title={el.name}>

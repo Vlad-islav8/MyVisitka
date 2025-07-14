@@ -22,3 +22,8 @@ export const getcontactsModal = createSelector(getAdminData, (admin) => {
 export const getTechnologies = createSelector(getAdminData, (admin) => {
     return admin.technologies
 })
+export const getPortfolio = createSelector(getAdminData, (admin) => {
+    return admin.portfolio
+})
+
+
