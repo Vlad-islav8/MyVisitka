@@ -1,0 +1,150 @@
+/* Основные стили футера */
+footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+.footerContainer {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.footerInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 0 6rem 0;
+}
+
+/* Анимации появления */
+.footerInfo > * {
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.footerInfo .aboutMe {
+    animation-delay: 0.2s;
+}
+
+.footerInfo .contacts {
+    animation-delay: 0.4s;
+}
+
+.footerInfo .fastlinks {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Стили заголовков */
+.footerInfo h2 {
+    position: relative;
+    color: #21d13f;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 4px 4px 16px #21d13f;
+    margin-bottom: 1.5rem;
+}
+
+.footerInfo h2::after {
+    bottom: -10px;
+    left: 0;
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: #21d13f;
+    width: 100px;
+    transition: all 0.4s ease;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    .footerInfo {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 0 3rem;
+    }
+
+    .footerInfo h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Стили для About Me */
+.aboutMe p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+/* Стили для контактов */
+.contactsLink {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contactsLink a {
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.3s ease;
+}
+
+.contactsLink a:hover {
+    filter: drop-shadow(8px 8px 16px #21d13f);
+    transform: scale(1.1);
+}
+
+/* Стили для ссылок */
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.links a {
+    color: var(--textColor);
+    font-weight: 500;
+    transition: all 0.4s ease;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.3rem 0;
+}
+
+.links a:hover {
+    transform: translateX(10px);
+    color: #21d13f;
+}
+
+/* Стили для копирайта */
+.copyright {
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.6s ease 0.8s forwards;
+}
+
+/* Ховер-эффекты */
+.aboutMe:hover h2::after,
+.contacts:hover h2::after,
+.fastlinks:hover h2::after {
+    width: 200px;
+}
+
+.aboutMe:hover p {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
