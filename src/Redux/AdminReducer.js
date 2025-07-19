@@ -21,6 +21,7 @@ import calculator from '../Images/PortFolio/calculator.png'
 import konstruct from '../Images/PortFolio/konstruct.png'
 import ujjo from '../Images/PortFolio/ujjo.png'
 import todo from '../Images/PortFolio/todo.png'
+import Investolazlo from '../Images/PortFolio/Investolazlo.png'
 const initialState = {
     contactsLink: [
         { name: "telegram", link: "https://t.me/mylitlezummer", icon: telegram },
@@ -150,6 +151,12 @@ const initialState = {
             link: 'https://vlad-islav8.github.io/TODO-LIST/', 
             prev: todo, 
             title: 'TODO Трекер задач. Написан на чистом React. Сохраняет задачи в локальное хранилище брузера. Имеет функционал добавления, удаления, сортировки задач. Готовую можно отметить как выполненную. Так же задачи можно редактировать '
+        },
+        {
+            name: 'Investolazlo', 
+            link: 'https://vlad-islav8.github.io/Investolazlo/', 
+            prev: Investolazlo, 
+            title: 'Лендинг для бизнесса. Струкртура и дизайн сайта отлично показывают мои навыки в работе с grid / flex'
         },
     ]
 }
